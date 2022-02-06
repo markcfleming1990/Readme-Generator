@@ -16,7 +16,8 @@ function generateMarkdown(answers) {  }
   // generateReadme function populating the README.md
   function generateMarkdown(answers) {
     return `
-${answers.promptUser} 
+    <h1 align="center">${answers.promptTitle} 👋</h1>
+
 
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 ## Description
@@ -48,6 +49,7 @@ This application is covered by the ${answers.license} license.
 <br />
 ✉️ Email me with any questions: ${answers.email}<br /><br />
 
+_This README was generated with ❤️ by [README-generator](https://github.com/markcfleming1990/README-generator) 🔥🔥🔥_
 `;
   };
 

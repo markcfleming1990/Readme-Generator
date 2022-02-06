@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const promptUser = () => {
+const promptTitle = () => {
   return inquirer.prompt([
     {
       type: "input",
@@ -122,7 +122,7 @@ const promptProject = portfolioData => {
 }
 
 
-promptUser()
+promptTitle()
   .then(promptProject)
   .then(portfolioData => {
     const readMe = generateMarkdown(portfolioData);
