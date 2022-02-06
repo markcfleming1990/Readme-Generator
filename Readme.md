@@ -1,7 +1,24 @@
-# undefined 👋
+# <p align=center> Readme.md Generator 👋</p>
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/jpd61/README-generator" />
+    <img src="https://img.shields.io/github/languages/top/jpd61/README-generator"  />
+    <img src="https://img.shields.io/github/issues/jpd61/README-generator" />
+    <img src="https://img.shields.io/github/last-commit/markcfleming1990/README-generator" >
+    <a href="https://twitter.com/goat904">
+        <img alt="Twitter: jpdewoody" src="https://img.shields.io/twitter/follow/goat904.svg?style=social" target="_blank" />
+    </a>
+</p>
+  
+<p align="center">
+    <img src="https://img.shields.io/badge/Javascript-yellow" />
+    <img src="https://img.shields.io/badge/jQuery-blue"  />
+    <img src="https://img.shields.io/badge/-node.js-green" />
+    <img src="https://img.shields.io/badge/-inquirer-red" >
+    <img src="https://img.shields.io/badge/-screencastify-lightgrey" />
+    <img src="https://img.shields.io/badge/-json-orange" />
+</p>
 
 
-![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 ## Description
 🔍 An application that takes user input from the command line and produces a professional README.md file
 
@@ -9,7 +26,7 @@
 
 ![This is the gif](https://media.giphy.com/media/muoyhLWFbCfOT83EM7/giphy-downsized-large.gif)
 
-full video can be viewed [here] (https://youtu.be/FejngGCQNTA)
+full video showing functionality  can be viewed [here] (https://youtu.be/FejngGCQNTA)
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
