@@ -1,8 +1,7 @@
 //packages needed for this application
 const fs = require('fs');
-const inquirer = require('inquirer')
-const util = require('util');
-//const generateReadme = require('./utils/generateMarkdown');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
@@ -25,7 +24,7 @@ const promptUser = () => {
 const promptProject = portfolioData => {
   console.log(`
     =================
-    Add a New Project
+    Add a New ReadMe
     =================
     `);
   // If there's no 'projects' array property, create one
@@ -120,10 +119,19 @@ const promptProject = portfolioData => {
         }
       }
     ]);
-};
+}
+
 
 promptUser()
-.then(promptProject)
+  .then(promptProject)
   .then(portfolioData => {
-    console.log(portfolioData);
+    const readMe = generateMarkdown(portfolioData);
+
+    fs.writeFile('./Readme.md', readMe, err => {
+      if (err) throw new Error(err);
+
+      console.log('Page created! Check out Readme file in this directory to see it!');
+    });
   });
+
+
