@@ -7,7 +7,7 @@ const promptTitle = () => {
   return inquirer.prompt([
     {
       type: "input",
-      name: "projectTitle",
+      name: "promptTitle",
       message: "What is the project title?(Reqired)",
       validate: nameInput => {
         if (nameInput) {
