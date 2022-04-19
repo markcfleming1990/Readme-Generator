@@ -16,7 +16,7 @@ function generateMarkdown(answers) {  }
   // generateReadme function populating the README.md
   function generateMarkdown(answers) {
     return `
-    <h1 align=center>${answers.promptTitle}👋</h1> 
+##  <h1 align=center>${answers.promptTitle}👋</h1> 
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/markcfleming1990/README-generator" />
     <img src="https://img.shields.io/github/languages/top/markcfleming1990/README-generator"  />
@@ -27,8 +27,6 @@ function generateMarkdown(answers) {  }
     </a>
 </p>
 
-
-![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
 ## Description
 🔍 ${answers.description}
 ## Table of Contents
